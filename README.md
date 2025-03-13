@@ -12,41 +12,41 @@ ADHD diagnosis in females is understudied and often misdiagnosed due to symptom 
 
 The dataset used in this project is part of the WiDS Datathon 2025. Register and download it from the competition page.
 
-        Folders: Train, Test, and a Data Dictionary (available on Kaggle)
+       - Folders: Train, Test, and a Data Dictionary (available on Kaggle)
         
-        Data Type: Neurophysiological features linked to ADHD diagnosis in connectome matrices
+        -Data Type: Neurophysiological features linked to ADHD diagnosis in connectome matrices
         
-        Features Include: EEG signals, response times (quantitative) & demographic attributes (categorical)
+        -Features Include: EEG signals, response times (quantitative) & demographic attributes (categorical)
         
-        Preprocessing Steps: Handling missing values, outliers, and feature transformations
+        -Preprocessing Steps: Handling missing values, outliers, and feature transformations
 
 📌 Methodology & Approach
 
 The model development follows a structured machine learning pipeline:
 
-        Exploratory Data Analysis (EDA) – Understanding feature distributions, correlations, and missing patterns.
+        1.Exploratory Data Analysis (EDA) – Understanding feature distributions, correlations, and missing patterns.
         
-        Feature Engineering (FE) – Creating meaningful features and reducing dimensionality.
+        2.Feature Engineering (FE) – Creating meaningful features and reducing dimensionality.
         
-        Data Preprocessing – Encoding categorical variables, scaling numerical data, handling imbalanced classes.
+        3.Data Preprocessing – Encoding categorical variables, scaling numerical data, handling imbalanced classes.
         
-        Model Selection – Training and comparing multiple models:
+        4.Model Selection – Training and comparing multiple models:
 
-        Logistic Regression
+                Logistic Regression
+                
+                Random Forest
+                
+                Gradient Boosting (Best Performing)
         
-        Random Forest
+        5.Hyperparameter Tuning – Optimized models using GridSearchCV / Optuna.
         
-        Gradient Boosting (Best Performing)
+        6.Evaluation Metrics – Performance measured using:
         
-        Hyperparameter Tuning – Optimized models using GridSearchCV / Optuna.
-        
-        Evaluation Metrics – Performance measured using:
-        
-        Accuracy, Precision, Recall, F1-score (classification)
-        
-        ROC-AUC Score (for ADHD prediction)
-        
-        SHAP & LIME for interpretability
+                Accuracy, Precision, Recall, F1-score (classification)
+                
+                ROC-AUC Score (for ADHD prediction)
+                
+                SHAP & LIME for interpretability
 
 📌 Results & Insights
 
